@@ -1,0 +1,58 @@
+{
+  "project_info": {
+    "project_number": "553745283929",
+    "firebase_url": "https://gisbms-ddcde.firebaseio.com",
+    "project_id": "gisbms-ddcde",
+    "storage_bucket": "gisbms-ddcde.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:553745283929:android:534d0019cea4218d",
+        "android_client_info": {
+          "package_name": "com.example.codebox.gisbms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "553745283929-t8obplk9hjhptse22melvaejfcd1dic5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.codebox.gisbms",
+            "certificate_hash": "7cd55237adedc55ace1560241b8efcb765feb9dc"
+          }
+        },
+        {
+          "client_id": "553745283929-r630thta1dup7ni1ejb3v79tmooda1fe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoDaSIOPyjSga-6f7KSDEGdfK6BoSrnVo"
+        },
+        {
+          "current_key": "AIzaSyCUJsl7LCZvTVNOlsDbrmVNurEvy7lQGwU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "553745283929-r630thta1dup7ni1ejb3v79tmooda1fe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.codebox.gisbms.AddEmergencyContacts">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ambulance"
+                    android:layout_marginRight="20dp"/>
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/fire"
+                    android:layout_marginRight="20dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New contact"
+                android:padding="15dp"
+                android:textColor="#000"
+                android:textSize="27sp"/>
+
+            <RadioGroup
+                android:id="@+id/contactType"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <RadioButton
+                    android:id="@+id/ambulanceContact"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:text="Ambulance"/>
+                <RadioButton
+                    android:id="@+id/fireContact"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:text="Firebigade"/>
+            </RadioGroup>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/personal"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Details"
+                android:padding="15dp"
+                android:textSize="17sp"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/orgName"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:inputType="text"
+                android:textSize="17sp"
+                android:hint="Name"/>
+
+            <EditText
+                android:id="@+id/orgEmail"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:inputType="textEmailAddress"
+                android:textSize="17sp"
+                android:hint="Email"/>
+
+            <EditText
+                android:id="@+id/phone"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:inputType="number"
+                android:textSize="17sp"
+                android:hint="Phone No."/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/place"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location Details"
+                android:padding="15dp"
+                android:textSize="17sp"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/cLat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:inputType="time"
+                android:hint="Latitude"
+                android:digits="1234567890."
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/cLng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:digits="1234567890."
+                android:inputType="time"
+                android:hint="Longitude"
+                android:textSize="17sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/setLocation"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="2"
+                    android:textColor="#D50000"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:text="Set location" />
+
+                <Button
+                    android:id="@+id/addContact"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="3"
+                    android:textColor="#FFF"
+                    android:text="Add" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.codebox.gisbms.CheckIn">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="150dp"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:src="@drawable/signup"/>-->
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/location"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update what you see !"
+                android:padding="15dp"
+                android:textColor="#000"
+                android:textSize="27sp"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/alert"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Issue"
+                android:padding="15dp"
+                android:textSize="17sp"
+                android:textColor="#000"/>
+
+            <Spinner
+                android:id="@+id/issue"
+                android:paddingLeft="10dp"
+                android:paddingRight="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:textSize="17sp"
+                style="?android:attr/borderlessButtonStyle"
+                android:background="#e2e2e2"
+                android:entries="@array/issue"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/comment"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comment (Your opinion)"
+                android:padding="15dp"
+                android:textSize="17sp"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Type a comment"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/time"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time and Date"
+                android:padding="15dp"
+                android:textSize="17sp"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:inputType="time"
+                android:hint="Set time"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:inputType="date"
+                android:hint="Set date"
+                android:textSize="17sp" />
+
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/place"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:padding="15dp"
+                android:textSize="17sp"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/lat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:inputType="time"
+                android:hint="Latitude"
+                android:digits="1234567890."
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/lng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:digits="1234567890."
+                android:inputType="time"
+                android:hint="Longitude"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/accuracy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:inputType="time"
+                android:digits="1234567890."
+                android:hint="Accuracy"
+                android:textSize="17sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/setLocation"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="2"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:text="Set location" />
+
+                <Button
+                    android:id="@+id/update"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="3"
+                    android:textColor="#FFF"
+                    android:text="update" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/storage"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="If you have not internet access, then you can store this imformation in your phone memory temporarily. Upload leter when you have a internet connection."
+                android:padding="15dp"
+                android:textColor="#000"/>
+
+            <Button
+                android:id="@+id/saveInfo"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#FFF"
+                android:text="save" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

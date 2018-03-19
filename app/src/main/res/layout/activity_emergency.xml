@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.codebox.gisbms.Emergency">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emergency Contacts"
+        android:padding="15dp"
+        android:textColor="#000"
+        android:textSize="23sp"/>
+
+    <ListView
+        android:id="@+id/emergencyContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/place"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:padding="15dp"
+                android:textSize="17sp"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/eLat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:inputType="time"
+                android:hint="Latitude"
+                android:digits="1234567890."
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/eLng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:digits="1234567890."
+                android:inputType="time"
+                android:hint="Longitude"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/eAccuracy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:inputType="time"
+                android:digits="1234567890."
+                android:hint="Accuracy"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/eSetLocation"
+                    android:layout_width="0dp"
+                    android:layout_height="53dp"
+                    android:layout_weight="2"
+                    android:textSize="13sp"
+                    android:textColor="#D50000"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:text="Set location" />
+
+                <Button
+                    android:id="@+id/infomAmbulance"
+                    android:layout_width="0dp"
+                    android:layout_height="53dp"
+                    android:layout_weight="3"
+                    android:textColor="#FFF"
+                    android:text="ambulance" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/informFirebrigade"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:textColor="#FFF"
+                android:layout_margin="11dp"
+                android:text="Fire Alarm" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
